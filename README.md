@@ -1,40 +1,55 @@
-# MNIST-AutoEncoder--convolution
+# CNN Autoencoder for MNIST Image Reconstruction
+- This project implements a **Convolutional Autoencoder** to learn compact latent representations of handwritten digits from the MNIST dataset and reconstruct the original images.
+- The focus of this project is to understand **representation learning and dimensionality reduction** using deep learning.
 
-📌 Overview
-A brief description of what this project does and why it is useful.
+ 🔍 Project Overview
+Autoencoders are widely used for:
+- Feature extraction
+- Noise reduction
+- Dimensionality reduction
 
-Example:
-This project demonstrates the implementation of an AutoEncoder using the MNIST dataset to learn compressed representations of handwritten digits.
+In this project:
+- A CNN-based encoder compresses input images
+- A decoder reconstructs images from latent space
+- The model learns meaningful compressed representations of digits
 
-🧠 Concepts Used
-- Machine Learning
-- Deep Learning
-- AutoEncoders
-- Neural Networks
 
-🛠️ Tech Stack
+🧠 Model Details
+- Input: 28×28 grayscale images
+- Encoder: Convolution + pooling layers
+- Latent space: Compressed feature representation
+- Decoder: Convolutional transpose layers
+- Loss function: Reconstruction loss (MSE)
+
+ 🛠 Tech Stack
 - Python
+- TensorFlow / Keras
 - NumPy
-- TensorFlow / PyTorch
-- Google Colab
-
-📂 Project Structure
-MNIST-AutoEncoder/
-├── data/                # Dataset info 
-├── notebooks/           # Jupyter notebooks 
-├── src/                 # Source code 
-├── outputs/             # Results & visualizations 
-├── requirements.txt 
-├── .gitignore 
-        └── README.md
+- Matplotlib
+- Google Colab (for training and experimentation)
 
 📊 Results
-Learns meaningful compressed representations
-Successfully reconstructs handwritten digit images
-Demonstrates dimensionality reduction using AutoEncoders
+- Successfully reconstructed handwritten digit images
+- Learned compact latent representations
+- Demonstrated dimensionality reduction using CNN Autoencoders
 
-🚀 Future Improvements
-Convolutional AutoEncoder
-Different latent space sizes
-Performance metrics
-Apply to other datasets
+Sample outputs and visualizations are included in the notebook.
+
+📁 Project Structure
+cnn-autoencoder-mnist/
+│
+├── MNIST_AutoEncoder.ipynb
+├── README.md
+
+ ▶️ How to Run
+1. Open the notebook in **Google Colab**
+2. Run all cells sequentially
+3. Model training, reconstruction, and visualization will execute end-to-end
+
+ 🔮 Future Improvements
+- Experiment with different latent space sizes
+- Add denoising autoencoder variants
+- Save trained model weights
+- Convert notebook logic into Python scripts
+
+  
